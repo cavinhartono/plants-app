@@ -4,14 +4,59 @@ section:not(.container) {
   padding: var(--x-large);
 }
 
+/* center */
+:is(.hero) {
+}
+
 :is(.hero) {
   width: var(--full);
 }
 
 .hero {
   height: var(--height);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   background-image: url("/assets/img/modern-living-room-interior-with-sofa-green-plants-lamp-table-dark-wall-background\ 1.png");
   background-position: center;
   background-size: cover;
+  color: var(--white-500);
+}
+
+.hero .title {
+  font-size: calc(var(--medium) + 12px);
+  font-weight: 700;
+}
+
+.hero .subtitle {
+  font-size: var(--subtitle);
+  color: inherit;
+  opacity: 0.75;
+}
+
+.hero .form {
+  position: relative;
+  margin: var(--small) 0;
+  width: calc(var(--full) - 75%);
+}
+
+.hero .form .btn {
+  position: absolute;
+  top: 2px;
+  right: 4px;
+  width: calc(var(--regular) - 4px);
+  height: calc(var(--regular) - 4px);
+  background: var(--blue-500);
+  border-radius: var(--full);
+}
+
+.hero .form .btn .icon {
+  width: calc(var(--small) - 8px);
+  height: calc(var(--small) - 8px);
+}
+
+.hero .form .field {
+  padding: var(--s-small) var(--small);
+  border-radius: var(--large);
 }

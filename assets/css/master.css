@@ -53,6 +53,11 @@ body {
   color: var(--black-500);
 }
 
+svg {
+  width: inherit;
+  height: inherit;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -60,6 +65,13 @@ a {
 
 li {
   list-style-type: none;
+}
+
+:is(input, select) {
+  position: relative;
+  border: 1px var(--black-300) solid;
+  outline: none;
+  width: var(--full);
 }
 
 :is(.title, .subtitle, .navbar .list .link) {
