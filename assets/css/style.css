@@ -1,14 +1,17 @@
 @import "./master.css";
 
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: var(--full);
-  padding: var(--small) 100px;
+section:not(.container) {
+  padding: var(--x-large);
 }
 
-.header.scroller {
-  background: var(--white-500);
-  box-shadow: 0px 8px 45px rgba(34, 34, 34, 0.1);
+:is(.hero) {
+  width: var(--full);
+}
+
+.hero {
+  height: var(--height);
+  text-align: center;
+  background-image: url("/assets/img/modern-living-room-interior-with-sofa-green-plants-lamp-table-dark-wall-background\ 1.png");
+  background-position: center;
+  background-size: cover;
 }
