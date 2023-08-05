@@ -123,6 +123,12 @@ li {
   z-index: 5;
 }
 
+.header .icon {
+  width: var(--small);
+  height: var(--small);
+  color: var(--white-500);
+}
+
 .header.scroller {
   background: var(--white-500);
   box-shadow: 0px 8px 45px rgba(34, 34, 34, 0.1);

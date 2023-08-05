@@ -80,3 +80,7 @@ section:not(.container) {
   height: var(--medium);
   color: inherit;
 }
+
+.best_sellers {
+  text-align: center;
+}
