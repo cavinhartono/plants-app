@@ -4,10 +4,6 @@ section:not(.container) {
   padding: var(--x-large);
 }
 
-/* center */
-:is(.hero) {
-}
-
 :is(.hero) {
   width: var(--full);
 }
@@ -47,16 +43,40 @@ section:not(.container) {
   right: 4px;
   width: calc(var(--regular) - 4px);
   height: calc(var(--regular) - 4px);
-  background: var(--blue-500);
+  background: var(--blue-600);
   border-radius: var(--full);
 }
 
 .hero .form .btn .icon {
   width: calc(var(--small) - 8px);
   height: calc(var(--small) - 8px);
+  color: var(--white-500);
 }
 
 .hero .form .field {
   padding: var(--s-small) var(--small);
   border-radius: var(--large);
+}
+
+.service .content {
+  width: var(--full);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service .content .list {
+  display: flex;
+  align-items: center;
+  gap: var(--s-small);
+}
+
+:is(.service .content .list) {
+  color: var(--blue-700);
+}
+
+.service .content .list .icon {
+  width: var(--medium);
+  height: var(--medium);
+  color: inherit;
 }
