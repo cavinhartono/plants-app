@@ -86,6 +86,7 @@ section:not(.container) {
 }
 
 .best_sellers .card {
+  position: relative;
   margin: var(--medium) 0;
   display: flex;
   justify-content: space-between;
@@ -93,7 +94,27 @@ section:not(.container) {
 }
 
 .best_sellers .card .list .link .detail {
+  padding: var(--small) 0;
+  border-radius: var(--regular);
+  background: var(--white-500);
+}
+
+.best_sellers .card .list.full {
+  position: relative;
+  background: var(--blue-500);
+  border-radius: var(--regular);
   box-shadow: 0px 4px 30px #dddada40;
+}
+
+.best_sellers .card .list:hover .product {
+  transform: translateY(-20%);
+}
+
+.best_sellers .product {
+  width: 250px;
+  height: 100%;
+  /* transform: translateY(-10%); */
+  transition: 0.5s;
 }
 
 .best_sellers .card .preview {
