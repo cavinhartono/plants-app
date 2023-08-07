@@ -75,7 +75,7 @@ section:not(.container) {
   color: var(--blue-700);
 }
 
-.service .content .list .icon {
+:is(.service .content .list .icon) {
   width: var(--medium);
   height: var(--medium);
   color: inherit;
@@ -83,4 +83,32 @@ section:not(.container) {
 
 .best_sellers {
   text-align: center;
+}
+
+.best_sellers .card {
+  margin: var(--medium) 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.best_sellers .card .list .link .detail {
+  box-shadow: 0px 4px 30px #dddada40;
+}
+
+.best_sellers .card .preview {
+  margin: var(--s-small) 0;
+  display: flex;
+  justify-content: center;
+  gap: var(--small);
+}
+
+.best_sellers .card .preview .list {
+  display: flex;
+  gap: var(--s-small);
+  align-items: center;
+}
+
+.best_sellers .card .preview .list .label {
+  font-size: var(--label);
 }

@@ -124,9 +124,12 @@ li {
 }
 
 .header .icon {
+  color: var(--white-500);
+}
+
+.icon {
   width: var(--small);
   height: var(--small);
-  color: var(--white-500);
 }
 
 .header.scroller {
