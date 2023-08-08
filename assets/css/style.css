@@ -178,3 +178,36 @@ section:not(.container) {
 .referances .card .list:hover .title {
   opacity: 1;
 }
+
+.cares {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--large);
+}
+
+.cares .info {
+  width: 50%;
+}
+
+.cares .info .content .list {
+  display: flex;
+  align-items: center;
+  gap: var(--medium);
+  margin: var(--medium) 0;
+}
+
+.cares .info .content .list .icon {
+  width: var(--regular);
+  height: var(--regular);
+  color: var(--blue-700);
+}
+
+.cares .info .detail:first-child .title {
+  font-size: var(--small);
+}
+
+.cares .info .content .detail .title {
+  color: var(--blue-700);
+}
