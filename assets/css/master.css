@@ -59,6 +59,12 @@ svg {
   color: inherit;
 }
 
+img {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
 a {
   text-decoration: none;
   color: inherit;

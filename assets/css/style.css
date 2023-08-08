@@ -81,7 +81,7 @@ section:not(.container) {
   color: inherit;
 }
 
-.best_sellers {
+:is(.best_sellers, .referances) {
   text-align: center;
 }
 
@@ -113,7 +113,6 @@ section:not(.container) {
 .best_sellers .product {
   width: 250px;
   height: 100%;
-  /* transform: translateY(-10%); */
   transition: 0.5s;
 }
 
@@ -132,4 +131,50 @@ section:not(.container) {
 
 .best_sellers .card .preview .list .label {
   font-size: var(--label);
+}
+
+:is(.referances) .card .list {
+  position: relative;
+}
+
+.referances .detail .title {
+  font-size: var(--medium);
+}
+
+.referances .detail .subtitle {
+  font-size: var(--small);
+}
+
+.referances .card {
+  margin: var(--medium) 0;
+  display: grid;
+  width: var(--full);
+  grid-template-areas: repeat(2, 1fr);
+  gap: var(--small);
+}
+
+.referances .card .list {
+  grid-area: var(--grid-area);
+  width: var(--full);
+  border-radius: var(--small);
+  overflow: hidden;
+}
+
+.referances .card .list .title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  width: var(--full);
+  height: var(--full);
+  background: rgba(34, 34, 34, 0.75);
+  color: var(--white-500);
+  font-size: var(--small);
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.referances .card .list:hover .title {
+  opacity: 1;
 }
