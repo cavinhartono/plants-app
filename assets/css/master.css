@@ -117,12 +117,21 @@ li {
   transition: 0.3s;
 }
 
+.btn.primary {
+  background: var(--blue-600);
+  border-radius: var(--medium);
+  padding: var(--s-small) var(--small);
+}
+
+:is(.header, .footer) {
+  padding: var(--small) var(--x-large);
+}
+
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: var(--full);
-  padding: var(--small) var(--x-large);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -162,4 +171,67 @@ li {
 
 .header.scroller .navbar .list .link {
   color: var(--black-300);
+}
+
+.footer {
+  width: var(--full);
+  background: var(--blue-600);
+}
+
+.footer .content {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--large);
+}
+
+.footer .content .form .title {
+  color: var(--white-500);
+}
+
+.footer .content .form .input {
+  margin: var(--s-small) 0;
+  position: relative;
+  background: var(--white-500);
+  border-radius: var(--medium);
+  border: 1px solid var(--black-300);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.footer .content .form .btn {
+  margin: 4px;
+}
+
+.footer .content .form .field {
+  padding: var(--s-small);
+  border: none;
+}
+
+.footer .content .action .links {
+  display: flex;
+  gap: var(--small);
+  width: var(--full);
+}
+
+.footer .content .action .links .list {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: var(--s-small);
+  color: var(--white-500);
+}
+
+.footer .content .action .links .list .link:hover {
+  color: var(--white-300);
+}
+
+.footer .label {
+  color: var(--white-500);
+  border-top: 1px solid var(--white-500);
+  border-bottom: 1px solid var(--white-500);
+  margin: var(--small) 0;
+  padding: var(--s-small) 0;
+  font-size: var(--subtitle);
+  text-align: center;
 }
