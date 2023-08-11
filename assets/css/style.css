@@ -38,11 +38,7 @@ section:not(.container) {
 }
 
 .hero .form .btn {
-  position: absolute;
-  top: 2px;
-  right: 4px;
-  width: calc(var(--regular) - 4px);
-  height: calc(var(--regular) - 4px);
+  padding: var(--s-small);
   background: var(--blue-600);
   border-radius: var(--full);
 }
@@ -53,9 +49,18 @@ section:not(.container) {
   color: var(--white-500);
 }
 
-.hero .form .field {
-  padding: var(--s-small) var(--small);
+.hero .form .input {
+  display: flex;
+  padding: calc(var(--s-small) - 10px);
+  background: var(--white-500);
+  border: 1px solid var(--black-300);
   border-radius: var(--large);
+  overflow: hidden;
+}
+
+.hero .form .input .field {
+  border: none;
+  padding: var(--s-small);
 }
 
 .service .content {
