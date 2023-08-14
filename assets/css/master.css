@@ -6,7 +6,7 @@
   --white-700: #999999;
   --white-800: #666666;
   --white-900: #333333;
-  --white-950: #1A1A1A;
+  --white-950: #1a1a1a;
   --black-50: #e8e8e8;
   --black-100: #d4d4d4;
   --black-200: #a6a6a6;
@@ -40,6 +40,7 @@
   --title: 1.25rem; /* 32px */
   --subtitle: 1rem; /* 16px */
   --label: 1.25rem; /* 20px */
+  --primary-bs: 0px 8px 45px rgba(34, 34, 34, 0.1);
 }
 
 * {
@@ -149,7 +150,7 @@ li {
 
 .header.scroller {
   background: var(--white-500);
-  box-shadow: 0px 8px 45px rgba(34, 34, 34, 0.1);
+  box-shadow: var(--primary-bs);
 }
 
 .navbar {
