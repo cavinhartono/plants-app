@@ -11,6 +11,7 @@ app.use(express.json());
 app.use(require("./routes/record"));
 
 const db = require("./db/conn");
+
 app.listen(port, () => {
   db.connectToServer(function (err) {
     if (err) console.error(err);
